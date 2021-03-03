@@ -1,0 +1,44 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #222;
+
+}
+
+h1 {
+    font-family: 'Roboto Slab', serif;
+    font-size: 7vw;
+
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    background: #03001e;
+    background: -webkit-linear-gradient(-60deg, #fdeff9, #ec38bc, #7303c0);
+    background: linear-gradient(-60deg, #fdeff9, #ec38bc, #7303c0);
+    background-size: 300%;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+
+    animation: flow 30s ease-in-out infinite;
+}
+
+
+@keyframes flow {
+    0% {
+        background-position: 0 50%;
+    }
+
+    50% {
+        background-position: 100% 50%;
+    }
+
+    100% {
+        background-position: 0 50%;
+    }
+}
